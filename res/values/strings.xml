@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Noni Tips</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="ten_percent">10%</string>
+    <string name="fifteen_percent">15%</string>
+    <string name="twenty_percent">20%</string>
+    <string name="tipping_ten">Tipping at 10%</string>
+    <string name="tipping_fifteen">Tipping at 15%</string>
+    <string name="tipping_twenty">Tipping at 20%</string>
+    <string name="tip_amount">"Tip is: "</string>
+    <string name="total_bill_prompt">enter original bill</string>
+    <string name="total_bill_with_tip"></string>
+    <string name="hint_bill_with_tip">final bill</string>
+    <string name="finalBill"></string>
+    <string name="custom">other %</string>
+    
+    
+
+</resources>

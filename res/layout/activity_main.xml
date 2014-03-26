@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <EditText
+        android:id="@+id/originalBill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnFifteen"
+        android:layout_alignLeft="@+id/btnTen"
+        android:layout_marginBottom="62dp"
+        android:ems="10"
+        android:hint="@string/total_bill_prompt" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/finalBill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnFifteen"
+        android:layout_marginTop="61dp"
+        android:layout_toRightOf="@+id/tip_is_label"
+        android:hint="@string/hint_bill_with_tip"
+        android:textColor="#0000FF"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tip_is_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/finalBill"
+        android:layout_alignBottom="@+id/finalBill"
+        android:layout_alignLeft="@+id/btnTen"
+        android:layout_marginLeft="5dp"
+        android:text="@string/tip_amount"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp" />
+
+    <!-- <Button
+        android:id="@+id/other"
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/btnTwenty"
+        android:onClick="onOther"
+        android:text="@string/custom" /> -->
+     
+     <Button
+        android:id="@+id/btnTen"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_above="@+id/finalBill"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@+id/btnFifteen"
+        android:background="#33CCFF"
+        android:gravity="center"
+        android:onClick="onTen"
+        android:text="@string/ten_percent" />
+
+    <Button
+        android:id="@+id/btnFifteen"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="#99FFFF"
+        android:onClick="onFifteen"
+        android:text="@string/fifteen_percent" />
+
+    <Button
+        android:id="@+id/btnTwenty"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_above="@+id/finalBill"
+        android:layout_marginLeft="24dp"
+        android:layout_toRightOf="@+id/btnFifteen"
+        android:background="#0099CC"
+        android:onClick="onTwenty"
+        android:text="@string/twenty_percent" />
+
+</RelativeLayout>
